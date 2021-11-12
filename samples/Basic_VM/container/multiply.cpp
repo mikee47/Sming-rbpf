@@ -1,4 +1,5 @@
 #include "include/container/multiply.h"
+#include "Object.hpp"
 
 namespace
 {
@@ -19,4 +20,7 @@ int multiply(multiply_context_t& context)
 {
 	context.output = int64_t(context.input1) * context.input2;
 	return 0;
+	// Object object(100);
+	// object.increment();
+	// return object.getValue();
 }
