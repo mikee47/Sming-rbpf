@@ -1,0 +1,9 @@
+name: CI Push
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    uses: mikee47/Sming/.github/workflows/library.yml@dev/macos
+    with:
+      alias: jerryscript
